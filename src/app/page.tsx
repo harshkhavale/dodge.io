@@ -33,21 +33,15 @@ export default async function Home() {
       <NavBar />
       <section>
         <div className="flex items-center justify-center flex-col mt-[80px] gap-4 ">
-          <span className="text-orange bg-orange/20 px-4 py-2 rounded-full text-sm">
+          <span className="text-sky bg-sky/20 px-4 py-2 rounded-full text-sm">
             An AI powered sales assistant chatbot
           </span>
-          <Image
-            src="/images/corinna-ai-logo.png"
-            width={500}
-            height={100}
-            alt="Logo"
-            className="max-w-lg object-contain"
-          />
+         <p className=' font-black text-[5rem] lg:text-[10rem] bg-gradient-to-r from-slate-900 to-slate-700 dark:from-slate-300 dark:to-slate-500 bg-clip-text text-transparent'>dodge.io</p>
           <p className="text-center max-w-[500px]">
             Your AI powered sales assistant! Embed Corinna AI into any website
             with just a snippet of code!
           </p>
-          <Button className="bg-orange font-bold text-white px-4">
+          <Button className="bg-sky font-bold text-white px-4">
             Start For Free
           </Button>
           <Image
@@ -75,7 +69,7 @@ export default async function Home() {
             })}
           >
             <CardHeader>
-              <CardTitle className="text-orange">{card.title}</CardTitle>
+              <CardTitle className="text-sky">{card.title}</CardTitle>
               <CardDescription>
                 {pricingCards.find((c) => c.title === card.title)?.description}
               </CardDescription>
@@ -100,7 +94,7 @@ export default async function Home() {
               </div>
               <Link
                 href={`/dashbord?plan=${card.title}`}
-                className="bg-[#f3d299] border-orange border-2 p-2 w-full text-center font-bold rounded-md"
+                className="hover:bg-black dark:border-white hover:text-white border-black border-2 p-2 w-full text-center font-bold rounded-md"
               >
                 Get Started
               </Link>

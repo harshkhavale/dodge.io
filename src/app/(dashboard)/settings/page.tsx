@@ -1,18 +1,22 @@
-import InfoBar from "@/components/infobar";
-import BillingSetting from "@/components/settings/billing-settings";
-import React from "react";
+import InfoBar from '@/components/infobar'
+import BillingSettings from '@/components/settings/billing-settings'
+// import ChangePassword from '@/components/settings/change-password'
+import DarkModetoggle from '@/components/settings/dark-mode'
+import React from 'react'
 
-type Props = {};
+type Props = {}
 
 const Page = (props: Props) => {
   return (
-    <div>
+    <>
       <InfoBar />
-      <div className=" overflow-y-auto w-full chat-window flex-1 h-0 flex flex-col gap-10">
-        <BillingSetting />
+      <div className="overflow-y-auto w-full chat-window flex-1 h-0 flex flex-col gap-10">
+        <BillingSettings />
+        <DarkModetoggle />
+        {/* <ChangePassword /> */}
       </div>
-    </div>
-  );
-};
+    </>
+  )
+}
 
-export default Page;
+export default Page
